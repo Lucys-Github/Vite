@@ -1,9 +1,9 @@
 <script setup>
-
 </script>
 
 <template>
     <div>
-        hej
+        <p>hej</p>
+        <p>why is sweden killing it's citizens?</p>
     </div>
 </template>
