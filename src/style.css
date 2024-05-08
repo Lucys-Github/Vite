@@ -1,0 +1,121 @@
+.CenterText {
+    text-align: center;
+}
+
+.TopMargin {
+    margin-top: 20px;
+}
+
+.SideMargin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.FullWidth {
+    width: 100%;
+}
+
+#Container {
+    height: 100vh;
+}
+
+.CheckboxFlexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#FilterContainer {
+    font-size: 2rem;
+}
+
+/* Computer */
+@media screen and (min-width: 1024px) {
+
+    /* Flexbox places chart and filter container on the same row */
+    #Container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ChartWidth {
+        width: 80%;
+    }
+
+    .ChartHeight {
+        height: 90%;
+    }
+
+    #SearchLabel {
+        font-size: 1rem;
+    }
+
+    #FilterContainer {
+        font-size: 1.5rem;
+    }
+
+    input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        outline: 2px solid black;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Screeen smaller than computer */
+@media screen and (max-width: 1024px) {
+    button {
+        font-size: 2rem;
+    }
+
+    input[type="text"] {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    input[type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+        outline: 2px solid black;
+    }
+
+    /* BiggerFont class for text in About page */
+    .BiggerFont {
+        font-size: 1.5rem;
+    }
+}
+
+/* Screen smaller than computer: Horizontal */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    input[type="text"] {
+        width: 80%;
+    }
+
+    .ChartHeight {
+        height: 120%;
+    }
+}
+
+/* Screen smaller than computer: Vertical */
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+
+    /* SearchLabel made smaller so it doesn't overflow/wrap */
+    #SearchLabel {
+        font-size: 1.5rem;
+    }
+
+    .ChartHeight {
+        height: 90%;
+    }
+}
+
+* {
+    margin: 0;
+}
